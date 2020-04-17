@@ -9,13 +9,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/neuron_pi/ros_domain_id.html</loc>
-    
-    <lastmod>2020-04-17T08:31:46.559Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/neuron_pi/ros_dotfiles.html</loc>
     
     <lastmod>2020-04-17T08:31:46.559Z</lastmod>
@@ -23,14 +16,21 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/neuron_pi/reference.html</loc>
+    <loc>http://yoursite.com/neuron_pi/ros_domain_id.html</loc>
+    
+    <lastmod>2020-04-17T08:31:46.559Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/neuron_pi/programming_tutorial.html</loc>
     
     <lastmod>2020-04-17T08:31:46.552Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/neuron_pi/programming_tutorial.html</loc>
+    <loc>http://yoursite.com/neuron_pi/reference.html</loc>
     
     <lastmod>2020-04-17T08:31:46.552Z</lastmod>
     
@@ -201,6 +201,34 @@
     <loc>http://yoursite.com/404/index.html</loc>
     
     <lastmod>2020-04-17T08:31:46.429Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/iot_pi/Introduction.html</loc>
+    
+    <lastmod>2020-04-17T06:01:38.591Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/iot_pi/PrimaryDisplay.html</loc>
+    
+    <lastmod>2020-04-17T05:52:42.034Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/iot_pi/ModuleInterfaceRequirment.html</loc>
+    
+    <lastmod>2020-04-17T05:30:24.811Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/iot_pi/ModuleOverview.html</loc>
+    
+    <lastmod>2020-04-17T05:18:52.040Z</lastmod>
     
   </url>
   

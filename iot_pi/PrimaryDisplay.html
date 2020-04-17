@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8">
+  <title>Primary Display Interface | ADLINK Industrial Pi Wiki</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Canonical links -->
+  <link rel="canonical" href="http://yoursite.com/iot_pi/PrimaryDisplay.html">
+  <!-- Alternative links -->
+  
+    
+      <link rel="alternative" hreflang="en" href="http://yoursite.com/iot_pi/PrimaryDisplay.html">
+    
+  
+  <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+  <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+  <style>
+    .pace .pace-progress {
+       background: #1E92FB;
+       height: 2px;
+     }
+    .pace .pace-progress-inner {
+       box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB;
+     }
+    .pace .pace-activity {
+       border-top-color: #1E92FB;
+       border-left-color: #1E92FB;
+    }
+  </style>
+  <!-- Icon -->
+  <link rel="Shortcut Icon" href="/docs-test-site/images/favicon.ico">
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="/vendor/semantic/dist/semantic.min.css">
+  <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <script src="/vendor/semantic/dist/semantic.min.js"></script>
+  <script>
+      (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:1081538,hjsv:6};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+
+  <!-- build:css build/css/navy.css -->
+  
+<link rel="stylesheet" href="/docs-test-site/css/navy.css">
+
+  <!-- endbuild -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css">
+  <!-- RSS -->
+  <link rel="alternate" href="/docs-test-site/atom.xml" title="ADLINK Industrial Pi Wiki" type="application/atom+xml">
+  <!-- Open Graph -->
+  <meta name="description" content="3.  Primary Display InterfacePins used for LVDS LCD support may alternatively be used to support up to two Embedded DisplayPorts. The AC coupling required for eDP operation shall be done off-Module. P">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Primary Display Interface">
+<meta property="og:url" content="http://yoursite.com/iot_pi/PrimaryDisplay.html">
+<meta property="og:site_name" content="ADLINK Industrial Pi Wiki">
+<meta property="og:description" content="3.  Primary Display InterfacePins used for LVDS LCD support may alternatively be used to support up to two Embedded DisplayPorts. The AC coupling required for eDP operation shall be done off-Module. P">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-04-17T06:00:48.288Z">
+<meta property="article:modified_time" content="2020-04-17T05:52:42.034Z">
+<meta property="article:author" content="ADLINK Technology Inc. All Rights Reserved.">
+<meta name="twitter:card" content="summary">
+  <!-- Google Analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-110196417-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</head>
+
+<body>
+  <div id="container">
+    <header id="header" class="wrapper">
+  <div id="header-inner" class="inner">
+    <h1 id="logo-wrap">
+      <a href="/docs-test-site/" id="logo">Hexo</a>
+    </h1>
+    <nav id="main-nav">
+      <a href="/docs-test-site/iot_pi/" class="main-nav-link current">Industrial Pi</a><a href="/docs-test-site/neuron_pi/" class="main-nav-link">Neuron Pi</a>
+      <a target="_blank" rel="noopener" href="https://github.com/adlink" class="main-nav-link"><i class="fa fa-github-alt"></i> GitHub</a>
+    </nav>
+
+    <a id="mobile-nav-toggle">
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+    </a>
+  </div>
+</header>
+
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name">Primary Display Interface</h1>
+              </header>
+              <div class="article-content" itemprop="articleBody">
+                <h1 id="3-Primary-Display-Interface" class="article-heading"><a href="#3-Primary-Display-Interface" class="headerlink" title="3.  Primary Display Interface"></a>3.  Primary Display Interface<a class="article-anchor" href="#3-Primary-Display-Interface" aria-hidden="true"></a></h1><p>Pins used for LVDS LCD support may alternatively be used to support up to two Embedded DisplayPorts. The AC coupling required for eDP operation shall be done off-Module.</p>
+<p>Pins used for LVDS LCD support may alternatively be used to support a MIPI DSI (Display Serial Interface). There is no AC coupling required for DSI operation.</p>
+<p><strong>Alternative assignments</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Pin #</strong></th>
+<th><strong>LVDS Signal Name</strong></th>
+<th><strong>MIPI DSI Signal Name</strong></th>
+<th><strong>eDP Signal Name</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S125<br>S126<br>S128<br>S129<br>S131<br>S132<br>S137<br>S138</td>
+<td>LVDS0_0+<br>LVDS0_0-<br>LVDS0_1+<br>LVDS0_1-<br>VDS0_2+<br>LVDS0_2-<br>LVDS0_3+<br>LVDS0_3-</td>
+<td>DSI0_D0+<br>DSI0_D0-<br>DSI0_D1+<br>DSI0_D1-<br>DSI0_D2+<br>DSI0_D2-<br>DSI0_D3+<br>DSI0_D3-</td>
+<td>eDP0_TX0+<br>eDP0_TX0-<br>eDP0_TX1+<br>eDP0_TX1-<br>eDP0_TX2+<br>eDP0_TX2-<br>eDP0_TX3+<br>eDP0_TX3-</td>
+</tr>
+<tr>
+<td>S134<br>S135</td>
+<td>LVDS0_CK+<br>LVDS0_CK-</td>
+<td>DSI0_CLK+<br>DSI0_CLK-</td>
+<td>eDP0_AUX+<br>eDP0_AUX-</td>
+</tr>
+<tr>
+<td>S133</td>
+<td>LCD0_VDD_EN</td>
+<td>LCD0_VDD_EN</td>
+<td>LCD0_VDD_EN</td>
+</tr>
+<tr>
+<td>S127</td>
+<td>LCD0_BKLT_EN</td>
+<td>LCD0_BKLT_EN</td>
+<td>LCD0_BKLT_EN</td>
+</tr>
+<tr>
+<td>S141</td>
+<td>LCD0_BKLT_PWM</td>
+<td>LCD0_BKLT_PWM</td>
+<td>LCD0_BKLT_PWM</td>
+</tr>
+<tr>
+<td>S144</td>
+<td>-</td>
+<td>DSI0_TE</td>
+<td>eDP0_HPD</td>
+</tr>
+<tr>
+<td>S111<br>S112<br>S114<br>S115<br>S117<br>S118<br>S120<br>S121</td>
+<td>LVDS1_0+<br>LVDS1_0-<br>LVDS1_1+<br>LVDS1_1 -<br>LVDS1_2+<br>LVDS1_2-<br>LVDS1_3+<br>LVDS1_3-</td>
+<td>DSI1_D0+<br>DSI1_D0-<br>DSI1_D1+<br>DSI1_D1-<br>DSI1_D2+<br>DSI1_D2-<br>DSI1_D3+<br>DSI1_D3-</td>
+<td>eDP1_TX0+<br>eDP1_TX0-<br>eDP1_TX1+<br>eDP1_TX1-<br>eDP1_TX2+<br>eDP1_TX2-<br>eDP1_TX3+<br>eDP1_TX3-</td>
+</tr>
+<tr>
+<td>S108<br>S109</td>
+<td>LVDS1_CK+<br>LVDS1_CK-</td>
+<td>DSI1_CLK+<br>DSI1_CLK-</td>
+<td>eDP1_AUX+<br>eDP1_AUX-</td>
+</tr>
+<tr>
+<td>S116</td>
+<td>LCD1_VDD_EN</td>
+<td>LCD1_VDD_EN</td>
+<td>LCD1_VDD_EN</td>
+</tr>
+<tr>
+<td>S107</td>
+<td>LCD1_BKLT_EN</td>
+<td>LCD1_BKLT_EN</td>
+<td>LCD1_BKLT_EN</td>
+</tr>
+<tr>
+<td>S122</td>
+<td>LCD1_BKLT_PWM</td>
+<td>LCD1_BKLT_PWM</td>
+<td>LCD1_BKLT_PWM</td>
+</tr>
+<tr>
+<td>S113</td>
+<td>-</td>
+<td>DSI1_TE</td>
+<td>eDP1_HPD</td>
+</tr>
+<tr>
+<td>S140</td>
+<td>I2C_LCD_DAT</td>
+<td>I2C_LCD_DAT</td>
+<td>I2C_LCD_DAT</td>
+</tr>
+<tr>
+<td>S139</td>
+<td>I2C_LCD_CK</td>
+<td>I2C_LCD_CK</td>
+<td>I2C_LCD_CK</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-1-Required-and-Optional-Feature-Table" class="article-heading"><a href="#3-1-Required-and-Optional-Feature-Table" class="headerlink" title="3.1  Required and Optional Feature Table"></a>3.1  Required and Optional Feature Table<a class="article-anchor" href="#3-1-Required-and-Optional-Feature-Table" aria-hidden="true"></a></h2><p>Single channel, dual channel or two single channel LVDS display panel interfaces are defined. The implementation of two single channel LVDS display interfaces is not expected to be common but is defined as an option for Module vendors. The LVDS interfaces support 18 and 24 bit display implementations.</p>
+<p>In a Module implementation with two single LVDS channels, the panel EDID proms would be in conflict and measures need to be taken to avoid this. One possible solution is that the 2nd LVDS EDID prom could be read over the I2C_GP pin pair rather than the I2C_LCD pin pair.</p>
+<p>The Module <strong><em>should</em></strong> implement an 18- / 24-bit LVDS output stream for the Primary display. </p>
+<p>All 18 bit TFT panels use the same LVDS color mapping. Only 3 data pairs (LVDS[0:1]_[0:2] +/-) and the clock pair are needed to drive an 18-bit TFT panel.</p>
+<p>Unfortunately, there are two 24-bit LVDS color mappings in the industry: </p>
+<ul>
+<li>Most significant color bits on the 4th LVDS data pair (LVDS[0:1]_[3] +/- here). This is the more common 24-bit mapping. It is not compatible with the 18-bit LVDS color mapping.</li>
+<li>Least significant color bits on the 4th LVDS data pair. This is compatible with the 18 LVDS color mapping.</li>
+</ul>
+<p>Modules that implement LVDS shall implement single channel 18 bit LVDS; should implement a 24 bit “18 bit compatible” LVDS mapping and may implement the “MS bit on 4th LVDS pair” mapping.  The second LVDS channel may be implemented.</p>
+<p>Details on LVDS color mappings are provided in <strong><em>Section\</em></strong> <strong><em>8\</em></strong> <strong><em>Appendix A: LVDS LCD Color\</em></strong> Mappings<strong><em>.\</em></strong></p>
+<table>
+<thead>
+<tr>
+<th>Signal Name</th>
+<th>Pin#</th>
+<th>Description</th>
+<th>I/O Type</th>
+<th>I/O Level</th>
+<th>Power Domain</th>
+<th>PU   / PD</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LVDS0_0+<br>LVDS0_0-<br>LVDS0_1+<br>LVDS0_1-<br>LVDS0_2+<br>LVDS0_2-<br>LVDS0_3+<br>LVDS0_3-</td>
+<td>S125<br>S126<br>S128<br>S129<br>S131<br>S132<br>S137<br>S138</td>
+<td>Primary LVDS  Channel Differential Pair Data Lines</td>
+<td>O LVDS</td>
+<td></td>
+<td>Runtime</td>
+<td></td>
+<td>100 ohm differential  termination across the differential pairs at the endpoint of the signal path,  usually on the display assembly.</td>
+</tr>
+<tr>
+<td>LVDS0_CK+<br>LVDS0_CK-</td>
+<td>S134<br>S135</td>
+<td>Primary LVDS  Channel Differential Pair Clock Lines</td>
+<td>O LVDS</td>
+<td></td>
+<td>Runtime</td>
+<td></td>
+<td>100 ohm differential  termination across the differential pair at the endpoint of the signal path,  usually on the display assembly.</td>
+</tr>
+<tr>
+<td>LCD0_VDD_EN</td>
+<td>S133</td>
+<td>Primary LVDS  Channel Power Enable</td>
+<td>O   CMOS</td>
+<td>1.8V</td>
+<td>Runtime</td>
+<td></td>
+<td>Active high</td>
+</tr>
+<tr>
+<td>LCD0_BKLT_EN</td>
+<td>S127</td>
+<td>Primary LVDS  Channel Backlight Enable</td>
+<td>O   CMOS</td>
+<td>1.8V</td>
+<td>Runtime</td>
+<td></td>
+<td>Active high</td>
+</tr>
+<tr>
+<td>LCD0_BKLT_PWM</td>
+<td>S141</td>
+<td>Primary LVDS  Channel Brightness Control</td>
+<td>O   CMOS</td>
+<td>1.8V</td>
+<td>Runtime</td>
+<td></td>
+<td>Through Pulse  Width Modulation (PWM)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>LVDS1_0+<br>LVDS1_0-<br>LVDS1_1+<br>LVDS1_1-<br>LVDS1_2+<br>LVDS1_2-<br>LVDS1_3+<br>LVDS1_3-</td>
+<td>S111<br>S112<br>S114<br>S115<br>S117<br>S118<br>S120<br>S121</td>
+<td>Secondary LVDS  Channel Differential Pair Data Lines</td>
+<td>O LVDS</td>
+<td></td>
+<td>Runtime</td>
+<td></td>
+<td>100 ohm differential  termination across the differential pairs at the endpoint of the signal path,  usually on the display assembly.</td>
+</tr>
+<tr>
+<td>LVDS1_CK+<br>LVDS1_CK-</td>
+<td>S108<br>S109</td>
+<td>Secondary LVDS  Channel Differential Pair Clock Lines</td>
+<td>O LVDS</td>
+<td></td>
+<td>Runtime</td>
+<td></td>
+<td>100 ohm differential  termination across the differential pair at the endpoint of the signal path,  usually on the display assembly.</td>
+</tr>
+<tr>
+<td>LCD1_VDD_EN</td>
+<td>S116</td>
+<td>Secondary LVDS  Channel Power Enable</td>
+<td>O   CMOS</td>
+<td>1.8V</td>
+<td>Runtime</td>
+<td></td>
+<td>Active high   Only in use, when two separate LVDS ports are supported, please check Module  user manual</td>
+</tr>
+<tr>
+<td>LCD1_BKLT_EN</td>
+<td>S107</td>
+<td>Secondary LVDS  Channel Backlight Enable</td>
+<td>O   CMOS</td>
+<td>1.8V</td>
+<td>Runtime</td>
+<td></td>
+<td>Active high   Only in use, when two separate LVDS ports are supported, please check Module  user manual</td>
+</tr>
+<tr>
+<td>LCD1_BKLT_PWM</td>
+<td>S122</td>
+<td>Secondary LVDS  Channel Brightness Control</td>
+<td>O   CMOS</td>
+<td>1.8V</td>
+<td>Runtime</td>
+<td></td>
+<td>Through pulse  width modulation (PWM)   only in use, when two separate LVDS ports are supported, please check Module  user manual</td>
+</tr>
+<tr>
+<td>I2C_LCD_DAT</td>
+<td>S140</td>
+<td>DDC Data Line Used  for Flat Panel Detection and Control</td>
+<td>I/O OD   CMOS</td>
+<td>1.8V</td>
+<td>Runtime</td>
+<td>PU 2k2</td>
+<td>Possible conflict  if two LVDS panels are used</td>
+</tr>
+<tr>
+<td>I2C_LCD_CK</td>
+<td>S139</td>
+<td>DDC Clock Line Used  for Flat Panel Detection and Control</td>
+<td>I/O OD   CMOS</td>
+<td>1.8V</td>
+<td>Runtime</td>
+<td>PU 2k2</td>
+<td>Possible conflict  if two LVDS panels are used</td>
+</tr>
+</tbody>
+</table>
+
+              </div>
+              <footer class="article-footer">
+                <a href="ModuleInterfaceRequirment.html" class="article-footer-prev" title="sidebar.iot_pi.Module Interface Requirment"><i class="fa fa-chevron-left"></i><span>Prev</span></a>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
+  <div class="inner">
+    <strong class="sidebar-title"><details><summary>Getting Started</summary><a href="index.html" class="sidebar-link first">Introduction</a><a href="UnBoxing.html" class="sidebar-link">UnBoxing</a><a href="UserInterfaces.html" class="sidebar-link">User Interfaces</a><a href="HowToSetup.html" class="sidebar-link">How to Setup</a></details></strong><strong class="sidebar-title"><details><summary>Supported OS</summary><a href="UbuntuImages.html" class="sidebar-link first">Ubuntu</a><a href="YoctoImages.html" class="sidebar-link">Yocto</a><a href="HowToFlashImage.html" class="sidebar-link">Prepare your SD Card</a></details></strong><strong class="sidebar-title"><details><summary>Build your OS</summary><a href="HowToBuildUbuntu.html" class="sidebar-link first">How to Build Ubuntu</a><a href="HowToBuildYocto.html" class="sidebar-link">How to Build Yocto</a></details></strong><strong class="sidebar-title"><details><summary>Adding MRAA</summary><a href="HowToInstallMRAA.html" class="sidebar-link first">How to Install</a></details></strong><strong class="sidebar-title"><details open><summary>Hardware Overview</summary><a href="Introduction.html" class="sidebar-link first">Introduction</a><a href="ModuleOverview.html" class="sidebar-link">Module Overview</a><a href="ModuleInterfaceRequirment.html" class="sidebar-link">Module Interface Requirment</a><a href="PrimaryDisplay.html" class="sidebar-link current">Primary Display</a></details></strong>
+  </div>
+</aside>
+    </div>
+  </div>
+</div>
+
+    <footer id="footer" class="wrapper">
+  <div class="inner">
+    <div id="footer-copyright">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copyright &copy; 2020 <a href="https://www.adlinktech.com/" target="_blank">ADLINK Technology Inc. All Rights Reserved.</a><br>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <div id="mobile-nav-dimmer"></div>
+  <nav id="mobile-nav">
+  <div id="mobile-nav-inner">
+    <ul id="mobile-nav-list">
+      <a href="/docs-test-site/iot_pi/" class="mobile-nav-link current">Industrial Pi</a><a href="/docs-test-site/neuron_pi/" class="mobile-nav-link">Neuron Pi</a>
+      <li class="mobile-nav-item">
+        <a href="https://github.com/adlink" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
+      </li>
+    </ul>
+    
+      <strong class="mobile-nav-title"><details><summary>Getting Started</summary><a href="index.html" class="mobile-nav-link first">Introduction</a><a href="UnBoxing.html" class="mobile-nav-link">UnBoxing</a><a href="UserInterfaces.html" class="mobile-nav-link">User Interfaces</a><a href="HowToSetup.html" class="mobile-nav-link">How to Setup</a></details></strong><strong class="mobile-nav-title"><details><summary>Supported OS</summary><a href="UbuntuImages.html" class="mobile-nav-link first">Ubuntu</a><a href="YoctoImages.html" class="mobile-nav-link">Yocto</a><a href="HowToFlashImage.html" class="mobile-nav-link">Prepare your SD Card</a></details></strong><strong class="mobile-nav-title"><details><summary>Build your OS</summary><a href="HowToBuildUbuntu.html" class="mobile-nav-link first">How to Build Ubuntu</a><a href="HowToBuildYocto.html" class="mobile-nav-link">How to Build Yocto</a></details></strong><strong class="mobile-nav-title"><details><summary>Adding MRAA</summary><a href="HowToInstallMRAA.html" class="mobile-nav-link first">How to Install</a></details></strong><strong class="mobile-nav-title"><details open><summary>Hardware Overview</summary><a href="Introduction.html" class="mobile-nav-link first">Introduction</a><a href="ModuleOverview.html" class="mobile-nav-link">Module Overview</a><a href="ModuleInterfaceRequirment.html" class="mobile-nav-link">Module Interface Requirment</a><a href="PrimaryDisplay.html" class="mobile-nav-link current">Primary Display</a></details></strong>
+    
+  </div>
+
+</nav>
+  <!-- Scripts -->
+<!-- build:js build/js/main.js -->
+
+<script src="/docs-test-site/js/lang_select.js"></script>
+
+
+<script src="/docs-test-site/js/toc.js"></script>
+
+
+<script src="/docs-test-site/js/mobile_nav.js"></script>
+
+<!-- endbuild -->
+
+<!-- Algolia -->
+
+
+</body>
+</html>
