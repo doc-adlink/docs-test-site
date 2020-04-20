@@ -9,13 +9,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/neuron_pi/ros_dotfiles.html</loc>
-    
-    <lastmod>2020-04-17T08:31:46.559Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/neuron_pi/ros_domain_id.html</loc>
     
     <lastmod>2020-04-17T08:31:46.559Z</lastmod>
@@ -23,14 +16,21 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/neuron_pi/programming_tutorial.html</loc>
+    <loc>http://yoursite.com/neuron_pi/ros_dotfiles.html</loc>
+    
+    <lastmod>2020-04-17T08:31:46.559Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/neuron_pi/reference.html</loc>
     
     <lastmod>2020-04-17T08:31:46.552Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/neuron_pi/reference.html</loc>
+    <loc>http://yoursite.com/neuron_pi/programming_tutorial.html</loc>
     
     <lastmod>2020-04-17T08:31:46.552Z</lastmod>
     
@@ -79,14 +79,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/neuron_pi/HowToSetup.html</loc>
+    <loc>http://yoursite.com/neuron_pi/HowToInstallMRAA.html</loc>
     
     <lastmod>2020-04-17T08:31:46.536Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/neuron_pi/HowToInstallMRAA.html</loc>
+    <loc>http://yoursite.com/neuron_pi/HowToSetup.html</loc>
     
     <lastmod>2020-04-17T08:31:46.536Z</lastmod>
     
